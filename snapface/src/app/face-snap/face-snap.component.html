@@ -11,6 +11,6 @@
     }
     <p>
         <button (click)="onSnap()">{{snapButtonText}}</button>
-        {{ faceSnap.snaps }}
+        <span [ngStyle]="{ color: getColor() }"> {{ faceSnap.snaps }}</span>
       </p>
   </div>

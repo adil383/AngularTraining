@@ -2,19 +2,19 @@
 <app-face-snap [faceSnap]="myOtherSnap"></app-face-snap>
 <app-face-snap [faceSnap]="myLastSnap"></app-face-snap> -->
 
-//Eviter la forme ci-haut en utilisant un tableau de facesnaps
+<!-- //Eviter la forme ci-haut en utilisant un tableau de facesnaps
 //for va itérer dans le tableau faceSnaps et trouver les éléments
-//track va identifier chaque élément avec son titre, mais en général on utilise un id.
+//track va identifier chaque élément avec son titre, mais en général on utilise un id. -->
 <!-- @for (faceSnap of faceSnaps; track faceSnap.title) {
     <app-face-snap [faceSnap]="faceSnap"></app-face-snap>
   } -->
 
-//Version plus parlante
+<!-- //Version plus parlante -->
 <!-- @for (faceSnapElement of faceSnaps; track faceSnapElement.title) {
     <app-face-snap [faceSnap]="faceSnapElement"></app-face-snap>
   } -->
 
-  // Version finale : Syntaxe à privilégier pour la lisibilité
+  <!-- // Version finale : Syntaxe à privilégier pour la lisibilité -->
   @for (faceSnap of faceSnaps; track faceSnap.title) {
     <app-face-snap [faceSnap]="faceSnap" />
   }
